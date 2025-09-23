@@ -1,54 +1,44 @@
-# Real Estate Analysis
+# 🏠 Real Estate Market Analysis – SQL Case Study  
 
-The real estate industry now heavily relies on data analytics tools to better estimate the prices of different properties. This case study analyses the sales of house properties in a city in Australia using **SQL**.
+## 📌 Business Objective  
+The goal of this project is to analyze residential real estate transactions to uncover the **key factors driving property prices**, identify **market trends across time and geography**, and highlight **potential investment opportunities**. This helps real estate firms, investors, and policymakers understand the dynamics of housing demand and pricing.  
 
-## The Dataset
-The dataset contains five columns:
-+ Datesold: The date when an owner sold the house to a buyer.
-+ Postcode: 4-digit postcode of the suburb where the owner sold the property
-+ PropetyType: The type of property either a house or unit.
-+ Price: The price for which the owner sold the property.
-+ Bedrooms: Number of bedrooms.
-  
-[Dataset from Kaggle](https://www.kaggle.com/datasets/htagholdings/property-sales)
+---
 
-## Problem Statement
+## 🔍 Approach  
+Using SQL queries, I explored the dataset to answer critical business questions:  
+- What factors (property type, bedrooms, location) influence property pricing?  
+- How do average prices evolve over time, and are there seasonal or long-term trends?  
+- Which postcodes or neighborhoods consistently show price growth?  
+- What is the overall health of the real estate market in terms of volume, price, and growth?  
+- Can we identify high-potential areas for investment?  
 
-This data analytics project aims to analyze and derive insights from the property sales dataset  to  understand the factors influencing property prices and explore trends in the real estate market.
+---
 
-## Objectives
- **Price Determinants**
- 
- Identify  factors influencing property prices, such as location, property type, and the number of bedrooms.
+## 📊 Key Insights  
+- **Property Type Impact**: Houses command higher average prices compared to units, with larger bedroom counts leading to significant price increases.  
+- **Time Trends**: Average property prices have shown a steady upward trend, with occasional seasonal peaks.  
+- **Geographic Differences**: Certain postcodes consistently outperform others, with the **top 6 postcodes by yearly sales volume** capturing the bulk of market activity.  
+- **Growth Hotspots**: Postcodes showing consistent year-on-year growth present attractive **investment opportunities**.  
+- **Market Health**: The market demonstrates long-term growth, though sales volumes fluctuate seasonally.  
 
-**Market Trends**
+---
 
-Analyze trends in property sales over time to understand how the market has evolved.
+## 🛠 Tools & Techniques  
+- **SQL (CTEs, Window Functions, Aggregations)** – for advanced querying and insights  
+- **Data Cleaning** – handled duplicates and missing values before analysis  
+- **Business Case Focus** – framed insights as actionable strategies for real estate stakeholders  
 
-**Geographic Variation**
+---
 
-Explore geographic variation in property prices by analyzing data across different postcodes.
+## 📂 Files  
+- `real_estate_analysis.sql` → SQL queries used for data cleaning, exploration, and insights  
+- `raw_sales.csv` → Dataset used for analysis  
 
- **Bedroom Analysis**
+---
 
- Investigate how the number of bedrooms affects property prices and demand.
-
- **Market Performance**
- 
- Evaluate the overall performance of the real estate market based on property sales data.
-
-## Key Questions
-
-1. What are the main factors contributing to variations in property prices for houses in the dataset?
-2. Does the number of bedrooms have a noticeable impact on property prices, and if so, what is the relationship?
-3. How has the average property price changed over time? Are there any seasonal patterns or long-term trends?
-4. Is there any correlation between property prices and property type?
-5. Are there significant differences in property prices between different postcodes?
-6. Deduce the top six postcodes by year's price.
-7. Are there  specific neighborhoods or postcodes that have shown consistent growth in property prices?
-8. Which date corresponds to the highest number of sales?
-9. Which year witnessed the lowest number of sales?
-10. Find out the postcode with the highest average price per sale.
-11. Are there any patterns or trends in the dates of property sales?
-12. What is the overall health of the real estate market based on the sales data?
-13. Can we identify any potential investment opportunities or areas where property prices have the potential to increase significantly?
+## 🚀 Business Impact  
+The analysis provides **decision-ready insights** for:  
+- **Investors** – identifying undervalued but fast-growing areas  
+- **Policy Makers** – understanding housing affordability and demand  
+- **Real Estate Firms** – targeting the right customer segments and locations  
